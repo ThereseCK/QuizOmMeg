@@ -1,0 +1,93 @@
+  
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title>Bli kjent med meg</title>
+</head>
+<body>
+
+    <style>
+    h1, h2, h3 {
+     
+        background-color: deepskyblue;
+        border:  2px solid red;
+        color: darkgreen;
+    }
+    p {
+        color: Blue;
+        font-size: 20px;
+    }
+    div {
+        color: red;
+        font-family: cursive;
+        font-size: 25px;
+    }
+
+    div2 {
+        color: navy;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    div3 {
+        color:darkmagenta;
+        text-shadow: 2px 2px 2px grey;
+        font-size: 20px;
+    }
+
+    </style>
+    <h1>Hva er mellomnavnet mitt?</h1>
+    <p onclick="riktignavn()" id="riktig">Camilla</p>
+    <div onclick="feilnavn1()" id="feil1">Charlotte</div>
+    <div2 onclick="feilnavn2()" id="feil2">Christina</div2>
+
+    <h2> Hva slags kjæledyr er det jeg har nå?</h2>
+    <div onclick="feildyr1()" id="feil21"> Hund</div>
+    <div onclick="feildyr2()" id="feil22"> Katt</div>
+    <div onclick="riktigdyr()" id="riktig2">Slange</div>
+
+    <h3>Hvor gammel er jeg/blir jeg i år?</h3>
+    <div3 onclick="feilalder1()" id="feil31"> 25 år</div3> <br>
+    <div3 onclick="riktigalder()" id="riktig3"> 30 år</div3> <br>
+    <div3 onclick="feilalder2()" id="feil32"> 28 år</div3> <br>
+
+
+
+    <script>
+        function riktignavn() {
+            document.getElementById('riktig').innerHTML = 'Helt korrekt, mitt mellomnavn er Camilla';
+            }
+        function feilnavn1() {
+            document.getElementById('feil1').innerHTML = 'Desverre feil, prøv gjerne igjen';
+            }
+         function feilnavn2() {
+             document.getElementById('feil2').innerHTML = 'Desverre er det feil';
+            }
+        
+         function feildyr1() {
+             document.getElementById('feil21').innerHTML = 'Jeg har hatt en hun, men har ikke nå';
+            }
+         function feildyr2() {
+             document.getElementById('feil22').innerHTML = 'Jeg har også hatt katt, men ikke nå lenger';
+            }
+         function riktigdyr() {
+             document.getElementById('riktig2').innerHTML = 'Helt korrekt, jeg har slange';
+            }
+
+        function feilalder1() {
+            document.getElementById('feil31').innerHTML = 'Desverre er jeg ikke så "ung" lenger';
+            }
+        function riktigalder() {
+            document.getElementById('riktig3').innerHTML = 'Det er korrekt, jeg fyller 30 år i år';
+        }
+        function feilalder2() {
+            document.getElementById('feil32').innerHTML = 'Det er desverre feil';
+
+        }
+
+
+    </script>
+</body>
+</html>
